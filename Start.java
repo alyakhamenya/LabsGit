@@ -11,6 +11,7 @@ public class Start {
         task.setCompleted();
         for(Task item : developer.getTasks())
             System.out.println(item);
+        System.out.println(Team.maxNumberOfDevelopers);
     }
 }
 
