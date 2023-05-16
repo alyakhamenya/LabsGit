@@ -25,9 +25,23 @@ public class Task {
         this.completed = task.completed;
         this.assignedDeveloper = task.assignedDeveloper;
     }
+    public String getName() {
+        return name;
+    }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
     public void setCompleted() {
         this.completed = true;
+    }
+
+    public Developer getAssignedDeveloper() {
+        return assignedDeveloper;
     }
 
     public void setAssignedDeveloper(Developer developer) {

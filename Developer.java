@@ -19,7 +19,9 @@ public class Developer {
         this.name = developer.name;
         this.tasks = new ArrayList<>(developer.tasks);
     }
-
+    public String getName() {
+        return name;
+    }
     public void addTask(Task task) {
         this.tasks.add(task);
     }

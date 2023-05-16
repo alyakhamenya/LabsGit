@@ -17,7 +17,9 @@ public class Team {
         this.developers = new ArrayList<>();
         this.tasks = new ArrayList<>();
     }
-
+    public String getName() {
+        return name;
+    }
     // Добавляем конструктор копирования
     public Team(Team team) {
         this.name = team.name;
