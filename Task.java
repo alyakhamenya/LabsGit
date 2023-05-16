@@ -1,18 +1,18 @@
-public class Task {
-    private String name;
+public class Task extends BusinessObject  {
+
     private String description;
     private boolean completed;
     private Developer assignedDeveloper;
 
     public Task() {
-        this.name = "Default Task Name";
+        super();
         this.description = "Default Task Description";
         this.completed = false;
         this.assignedDeveloper = null;
     }
 
     public Task(String name, String description) {
-        this.name = name;
+        super(name);
         this.description = description;
         this.completed = false;
         this.assignedDeveloper = null;
@@ -20,11 +20,12 @@ public class Task {
 
     // Добавляем конструктор копирования
     public Task(Task task) {
-        this.name = task.name;
+        super(task.getName());
         this.description = task.description;
         this.completed = task.completed;
         this.assignedDeveloper = task.assignedDeveloper;
     }
+
     public String getName() {
         return name;
     }

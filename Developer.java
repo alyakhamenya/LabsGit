@@ -1,22 +1,21 @@
 import java.util.ArrayList;
 
-public class Developer {
-    private String name;
+public class Developer extends BusinessObject {
     private ArrayList<Task> tasks;
 
     public Developer() {
-        this.name = "Default Developer Name";
+        super();
         this.tasks = new ArrayList<>();
     }
 
     public Developer(String name) {
-        this.name = name;
+        super(name);
         this.tasks = new ArrayList<>();
     }
 
     // Добавляем конструктор копирования
     public Developer(Developer developer) {
-        this.name = developer.name;
+        super(developer.getName());
         this.tasks = new ArrayList<>(developer.tasks);
     }
     public String getName() {
